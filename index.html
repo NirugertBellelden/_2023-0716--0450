@@ -115,7 +115,8 @@
 	loadingBar.style.display = "block";
 
 	var script = document.createElement("script");
-	script.src = loaderUrl;
+	//script.src = loaderUrl;
+	script.src = "https://raw.githubusercontent.com/NirugertBellelden/_2023-0716--0450/main/Build/_2023-0716--0450.loader.js";
 	//script.onload = () => {
 	script.addEventListener("load", (event) => {
 		createUnityInstance(canvas, config, (progress) => {
