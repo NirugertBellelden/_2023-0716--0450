@@ -113,13 +113,12 @@
 	}
 
 	loadingBar.style.display = "block";
-	//2023/07/18_12:16
-	//<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
 	var script = document.createElement("script");
 	//script.src = loaderUrl;
 	//script.src = "https://raw.githubusercontent.com/NirugertBellelden/_2023-0716--0450/main/Build/_2023-0716--0450.loader.js";
 	script.src = "https://raw.githubusercontent.com/NirugertBellelden/_2023-0716--0450/main/Build/_2023-0716--0450.loader.jspre";
+
 	script.onload = () => {
 	//script.addEventListener("load", (event) => {
 		createUnityInstance(canvas, config, (progress) => {
