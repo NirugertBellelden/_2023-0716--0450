@@ -6,7 +6,8 @@
     <title>Unity WebGL Player | WebGL Test_2023-0616--1650</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script type="text/javascript" src="_2023-0716--0450.loader.js"></script>
+    //<script type="text/javascript" src="_2023-0716--0450.loader.js"></script>
+    <script type="text/javascript" src="Build/_2023-0716--0450.loader.js"></script>
 
   </head>
   <body>
@@ -121,8 +122,9 @@
 	script.src = "https://raw.githubusercontent.com/NirugertBellelden/_2023-0716--0450/main/Build/_2023-0716--0450.loader.js";
 	//script.src = "https://raw.githubusercontent.com/NirugertBellelden/_2023-0716--0450/main/Build/_2023-0716--0450.loader.jspre";
 
-	script.onload = () => {
-	//script.addEventListener("load", (event) => {
+//	script.onload = () => {
+//	};
+	script.addEventListener("load", (event) => {
 		createUnityInstance(canvas, config, (progress) => {
 			progressBarFull.style.width = 100 * progress + "%";
 		}).then((unityInstance) => {
@@ -133,8 +135,7 @@
 		}).catch((message) => {
 			alert(message);
 		});
-	};
-	//});
+	});
 
 	document.body.appendChild(script);
 
